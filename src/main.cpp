@@ -95,8 +95,8 @@ int main( )
     
     
     // Build and compile our shader program
-    Shader lightingShader( "C:/Users/ASUS/Desktop/lighting_shading/src/res/shaders/lighting.vs", "C:/Users/ASUS/Desktop/ighting_shading/src/res/shaders/lighting.frag" );
-    Shader lampShader( "C:/Users/ASUS/Desktop/ighting_shading/src/res/shaders/lamp.vs", "C:/Users/ASUS/Desktop/ighting_shading/src/res/shaders/lamp.frag" );
+    Shader lightingShader( "C:/Users/ASUS/Desktop/lighting_shading/src/res/shaders/lighting.vs", "C:/Users/ASUS/Desktop/lighting_shading/src/res/shaders/lighting.frag" );
+    Shader lampShader( "C:/Users/ASUS/Desktop/lighting_shading/src/res/shaders/lamp.vs", "C:/Users/ASUS/Desktop/lighting_shading/src/res/shaders/lamp.frag" );
     
     // Set up vertex data (and buffer(s)) and attribute pointers
     GLfloat vertices[] =
@@ -205,7 +205,7 @@ int main( )
     unsigned char *image;
     
     // Diffuse map
-    image = SOIL_load_image( "C:/Users/ASUS/Desktop/ighting_shading/src/res/images/container2.png", &imageWidth, &imageHeight, 0, SOIL_LOAD_RGB );
+    image = SOIL_load_image( "C:/Users/ASUS/Desktop/lighting_shading/src/res/images/container2.png", &imageWidth, &imageHeight, 0, SOIL_LOAD_RGB );
     glBindTexture( GL_TEXTURE_2D, diffuseMap );
     glTexImage2D( GL_TEXTURE_2D, 0, GL_RGB, imageWidth, imageHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image );
     glGenerateMipmap( GL_TEXTURE_2D );
@@ -216,7 +216,7 @@ int main( )
     glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST );
     
     // Specular map
-    image = SOIL_load_image( "C:/Users/ASUS/Desktop/ighting_shading/src/res/images/container2_specular.png", &imageWidth, &imageHeight, 0, SOIL_LOAD_RGB );
+    image = SOIL_load_image( "C:/Users/ASUS/Desktop/lighting_shading/src/res/images/container2_specular.png", &imageWidth, &imageHeight, 0, SOIL_LOAD_RGB );
     glBindTexture( GL_TEXTURE_2D, specularMap );
     glTexImage2D( GL_TEXTURE_2D, 0, GL_RGB, imageWidth, imageHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image );
     glGenerateMipmap( GL_TEXTURE_2D );
