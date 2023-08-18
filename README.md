@@ -1,33 +1,32 @@
 # lighting_shading
 
-<h3>-> latest MinGW64 (any) should be installed in your system</h3>
+<h2>## Prerequisites</h2>
+- Install the latest MinGW64 (or any compatible version) on your system.
+<br><br>
 
-<H2>STEPS:</H2>
+<h2>## Steps</h2>
 
-1. Clone this repo
+1. Clone this repository.
 
-2. In ./res/main.cpp change the path string of: <br>
-    i.   lamp shader <br>
-    ii.  model shader <br>
-    iii. model import
+2. In `./res/main.cpp`, update the path strings for:
+   - Lamp shader
+   - Model shader
+   - Model import
 
-3. CD bin
+3. Navigate to the `bin` directory.
 
-4. Run Makefile: mingw32-make
+4. Run the Makefile: `mingw32-make`.
 
-5. Executable file is created (app.exe) inside bin directory
+5. An executable file (`app.exe`) will be created inside the `bin` directory.
 
-6. Open .exe and enjoy XD
+6. Run `app.exe` and enjoy!
+<br><br>
 
-<H2>RESULT:</H2>
+<h2>### Images</h2>
 
-<h3>Image:</h3>
 ![Image 1](https://github.com/samipneupane/lighting_shading/blob/main/result/image_1.png)
-<br>
 ![Image 2](https://github.com/samipneupane/lighting_shading/blob/main/result/image_2.png)
 
-<h3>Video:</h3>
-<video controls width="500">
-    <source src="https://github.com/samipneupane/lighting_shading/blob/main/result/video_1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+<h2>### Video</h2>
+
+[Watch the Video](https://github.com/samipneupane/lighting_shading/blob/main/result/video_1.mp4)
